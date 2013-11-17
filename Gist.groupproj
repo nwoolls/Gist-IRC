@@ -1,0 +1,34 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6cfe4fd1-d8a3-468b-a9c1-e6fa3a78f1cd}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="Gist.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Gist">
+    <MSBuild Projects="Gist.dproj" Targets="" />
+  </Target>
+  <Target Name="Gist:Clean">
+    <MSBuild Projects="Gist.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Gist:Make">
+    <MSBuild Projects="Gist.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Gist" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="Gist:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="Gist:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

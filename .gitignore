@@ -1,0 +1,13 @@
+*.exe
+*.dll
+*.local
+*.identcache
+*.otares
+*.stat
+*.dcu
+__history
+*.cfg
+*.skincfg
+*.tvsconfig
+*.map
+bugreport.txt

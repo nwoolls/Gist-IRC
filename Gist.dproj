@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8e41c56b-de23-4aeb-bc7e-9f0e07a7429e}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Gist.exe</DCC_DependencyCheckOutputName>
+    <MainSource>Gist.dpr</MainSource>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG;madExcept</DCC_Define>
+    <DCC_UnitSearchPath>$(BDS)\Lib\Debug\Indy10;$(BDS)\lib\Debug;$(BDS)\RaveReports\Lib</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(BDS)\Lib\Debug\Indy10;$(BDS)\lib\Debug;$(BDS)\RaveReports\Lib</DCC_ResourcePath>
+    <DCC_ObjPath>$(BDS)\Lib\Debug\Indy10;$(BDS)\lib\Debug;$(BDS)\RaveReports\Lib</DCC_ObjPath>
+    <DCC_IncludePath>$(BDS)\Lib\Debug\Indy10;$(BDS)\lib\Debug;$(BDS)\RaveReports\Lib</DCC_IncludePath>
+    <DCC_MapFile>3</DCC_MapFile>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">True</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">99</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1033</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Nathanial Woolls</VersionInfoKeys><VersionInfoKeys Name="FileDescription">Gist</VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.99</VersionInfoKeys><VersionInfoKeys Name="InternalName">Gist</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Copyright (C) Nathanial Woolls</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">Gist.exe</VersionInfoKeys><VersionInfoKeys Name="ProductName">Gist</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="C:\Program Files\Developer Express.VCL\Library\Delphi11\dxPScxPivotGridLnkD11.bpl">File C:\Program Files\Developer Express.VCL\Library\Delphi11\dxPScxPivotGridLnkD11.bpl not found</Excluded_Packages>
+      <Excluded_Packages Name="C:\Program Files\Gnostice\PDFtoolkit VCL\Lib\D2007\DCLgtPDFkitD2007ProP.bpl">File C:\Program Files\Gnostice\PDFtoolkit VCL\Lib\D2007\DCLgtPDFkitD2007ProP.bpl not found</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+    </Excluded_Packages><Source><Source Name="MainSource">Gist.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Gist.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="dmConnection.pas">
+      <Form>ConnectionData</Form>
+      <DesignClass>TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="fAbout.pas">
+      <Form>AboutForm</Form>
+    </DCCReference>
+    <DCCReference Include="fChannels.pas">
+      <Form>Channels</Form>
+    </DCCReference>
+    <DCCReference Include="fChat.pas">
+      <Form>ChatFrame</Form>
+      <DesignClass>TFrame</DesignClass>
+    </DCCReference>
+    <DCCReference Include="fIdentificationOptions.pas">
+      <Form>IdentificationOptionsFrame</Form>
+      <DesignClass>TFrame</DesignClass>
+    </DCCReference>
+    <DCCReference Include="fInput.pas">
+      <Form>InputFrame</Form>
+      <DesignClass>TFrame</DesignClass>
+    </DCCReference>
+    <DCCReference Include="fMain.pas">
+      <Form>MainForm</Form>
+    </DCCReference>
+    <DCCReference Include="fOptions.pas">
+      <Form>OptionsForm</Form>
+    </DCCReference>
+    <DCCReference Include="fOptionsBase.pas">
+      <Form>OptionsBaseFrame</Form>
+      <DesignClass>TFrame</DesignClass>
+    </DCCReference>
+    <DCCReference Include="IdIRC.pas" />
+    <DCCReference Include="RichEditURL.pas" />
+    <DCCReference Include="uCloseCommandHandler.pas" />
+    <DCCReference Include="uCommandHandler.pas" />
+    <DCCReference Include="uConst.pas" />
+    <DCCReference Include="uCtcpCommandHandler.pas" />
+    <DCCReference Include="uCycleCommandHandler.pas" />
+    <DCCReference Include="uDateUtils.pas" />
+    <DCCReference Include="uDisconnectCommandHandler.pas" />
+    <DCCReference Include="uEditFuncs.pas" />
+    <DCCReference Include="uIRCColors.pas" />
+    <DCCReference Include="uIRCRichEdit.pas" />
+    <DCCReference Include="uJoinCommandHandler.pas" />
+    <DCCReference Include="uMeCommandHandler.pas" />
+    <DCCReference Include="uNamesCommandHandler.pas" />
+    <DCCReference Include="uNickCommandHandler.pas" />
+    <DCCReference Include="uNickNamesListParam.pas" />
+    <DCCReference Include="uNoticeCommandHandler.pas" />
+    <DCCReference Include="uPartCommandHandler.pas" />
+    <DCCReference Include="uQueryCommandHandler.pas" />
+    <DCCReference Include="uQuoteCommandHandler.pas" />
+    <DCCReference Include="uSayCommandHandler.pas" />
+    <DCCReference Include="uServerCommandHandler.pas" />
+    <DCCReference Include="uStringUtils.pas" />
+    <DCCReference Include="uTokenizer.pas" />
+    <DCCReference Include="uWhoisCommandHandler.pas" />
+    <DCCReference Include="uWhoisExCommandHandler.pas" />
+  </ItemGroup>
+</Project>
